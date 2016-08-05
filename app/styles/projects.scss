@@ -1,0 +1,103 @@
+@import "bourbon";
+@import "neat";
+@import "base/base";
+
+body > div.ember-view > header {
+  @include outer-container();
+
+  h1 {
+    font-size: 5*$base-font-size;
+    font-weight: 100;
+    margin:0;
+  }
+
+  aside {
+    text-align: right;
+    > a {
+
+    }
+  }
+}
+
+article.contract > header > aside.timeline {
+
+}
+
+main.resume {
+  @include outer-container();
+  > section {
+    > h1{
+      font-weight: 500;
+      font-size: 2* $base-font-size;
+      border-bottom:  solid 1px $red;
+    }
+    > article { //hopkins, contract
+      > header {
+        margin: $base-spacing 0;
+      }
+
+      header {
+        h2 {
+          font-weight: 200;
+          font-size: $base-font-size*1.5;
+          margin: 0;
+
+        }
+        h3 {
+          font-weight: 400;
+          font-size: $base-font-size*1.2;
+          margin: 0;
+        }
+        h4 {
+          font-weight: 400;
+          font-size: $base-font-size*1.5;
+          margin: 0;
+        }
+        h6 {
+          font-weight: 400;
+          font-size: $base-font-size*1;
+          margin: 0;
+        }
+        aside{
+          &.timeline{
+            text-align:right;
+          }
+        }
+      }
+
+      ul {
+        li {
+          font-weight: 200;
+          font-size: $base-font-size;
+        }
+      }
+
+    }
+    article{
+      margin-left: $base-spacing;
+    }
+
+
+    &#projects {
+      article.project {
+        margin-bottom: $base-spacing;
+        > header {
+          > aside {
+            display: inline-block;
+
+          }
+        }
+      }
+    }
+
+    &.education {
+      > article.umbc {
+
+      }
+      > article.online {
+
+      }
+    }
+  }
+}
+
