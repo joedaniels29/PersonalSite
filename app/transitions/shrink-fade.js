@@ -10,6 +10,7 @@ import { Promise } from "liquid-fire";
 import { animate } from "liquid-fire";
 
 export default function scale(opts={}) {
-    return Promise.all([animate(this.oldElement, {scale: [1.2, 1], opacity: [0.2, 1]}, opts),
-        animate(this.newElement, {scale: [1, 0.9],opacity: [1, 0.5]}, opts)]);
+    let quantity = .3
+    return Promise.all([animate(this.oldElement, {scale: [1-quantity, 1], opacity: [0.1, 1]}, opts),
+        animate(this.newElement, {scale: [1, 1+quantity],opacity: [1, 0.1]}, opts)]);
 }

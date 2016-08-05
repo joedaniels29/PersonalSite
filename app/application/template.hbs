@@ -1,1 +1,20 @@
-{{yield}}
+<header>
+    <h1>Joe Daniels</h1>
+    <aside>
+        <a href="http://github.com/joedaniels29">Github</a>
+        <a href="mailto:joedaniels29@me.com">Email Me</a>
+        <a class="npm-button" href="https://www.npmjs.com/~joedaniels29">NPM</a>
+        <a class="facebook" href="https://www.npmjs.com/~joedaniels29">Facebook</a>
+        <a class="twitter" href="https://www.npmjs.com/~joedaniels29">Twitter</a>
+        <a class="linked-in" href="https://www.npmjs.com/~joedaniels29">LinkedIn</a>
+    </aside>
+
+    <aside>{{application/lett-r models=model}}</aside>
+    <nav>
+        {{#link-to "index"}}Resume{{/link-to}}
+        {{#link-to "projects"}}Projects{{/link-to}}
+        {{#link-to "projects"}}Blog{{/link-to}}
+    </nav>
+</header>
+
+{{liquid-outlet}}

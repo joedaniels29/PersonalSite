@@ -1,1 +1,6 @@
-{{yield}}
+{{#liquid-bind currentContent use=use class="lettr" as |currentContent |}}
+    {{#each currentContent as |letter c|}}
+        {{application/lett-r-char letter=letter idx=c}}
+    {{/each}}
+{{/liquid-bind}}
+

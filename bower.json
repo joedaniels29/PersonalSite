@@ -2,10 +2,11 @@
   "name": "personal-site",
   "dependencies": {
     "ember": "~2.7.0",
-    "ember-cli-shims": "0.1.1",
+    "ember-cli-shims": "~0.1.1",
     "ember-qunit-notifications": "0.1.0",
     "textillate": "^0.4.0",
     "animate.css": "^3.5.2",
-    "neat": "~1.7.2"
+    "neat": "~1.7.2",
+    "ionicons": "^2.0.1"
   }
 }
