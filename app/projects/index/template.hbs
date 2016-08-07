@@ -1,0 +1,14 @@
+<article id="project-select">
+    <section class="grid-items">
+        {{#each model as |value|}}
+            {{#link-to "projects.glob" value.id class=(join " " (flatten (array "grid-item" value.customClasses)))}}
+                <img
+                   src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_square.png"
+                   alt="">
+                <h1>{{value.name}}</h1>
+                <aside>{{value.description}}</aside>
+            {{/link-to}}
+
+        {{/each}}
+    </section>
+</article>
