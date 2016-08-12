@@ -1,13 +1,26 @@
 <article id="project-select">
     <section class="grid-items">
-        {{#each model as |value|}}
-            {{#link-to "projects.glob" value.id class=(join " " (flatten (array "grid-item" value.customClasses)))}}
-                <img
-                   src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_square.png"
-                   alt="">
-                <h1>{{value.name}}</h1>
-                <aside>{{value.description}}</aside>
-            {{/link-to}}
+        {{#each model as |m|}}
+            <a {{action "transition" "projects.glob" m.id}}
+               style={{concat
+               "background-color:" m.color.primary ";"
+               (if (and m.background m.background.image)
+                (concat "background-image: url(" "assets/images/" m.background.image ");")
+                (if m.background
+                    (concat "background-color:" m.color.primary ";")
+                    )
+               )
+               }}
+
+               class={{join " " (flatten (array "grid-item" m.customClasses))}}>
+
+                {{#if m.icon}}
+                    <img src="assets/images/{{or m.icon.src m.icon}}" alt={{or m.icon.alt m.name}}/>
+                {{/if}}
+
+                <h1>{{m.name}}</h1>
+                <aside>{{m.description}}</aside>
+            </a>
 
         {{/each}}
     </section>

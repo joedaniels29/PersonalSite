@@ -2,46 +2,32 @@
 @import "neat";
 @import "base/base";
 
-body > div.ember-view > header {
-  @include outer-container();
-
-  h1 {
-    font-size: 5*$base-font-size;
-    font-weight: 100;
-    margin:0;
-  }
-
-  aside {
-    text-align: right;
-    > a {
-
-    }
-  }
-}
-
+@import "header";
 article.contract > header > aside.timeline {
 
 }
+
 //hopefully we can remove this soon.
-.lettr span{
-  top:0 !important;
+.lettr span {
+  top: 0 !important;
 }
+
 //this makes sure that we dont clip. not sure how this impacts performance... i hear its actually good for it...
-.liquid-container, .liquid-child{
-  overflow:visible;
+.liquid-container, .liquid-child {
+  overflow: visible;
 }
 
-
-main{
+main {
   @include outer-container();
 }
+
 //todo: break out into another fiel
 main.resume {
   > section {
-    > h1{
+    > h1 {
       font-weight: 500;
       font-size: 2* $base-font-size;
-      border-bottom:  solid 1px $red;
+      border-bottom: solid 1px $red;
     }
     > article { //hopkins, contract
       > header {
@@ -53,7 +39,6 @@ main.resume {
           font-weight: 200;
           font-size: $base-font-size*1.5;
           margin: 0;
-
         }
         h3 {
           font-weight: 400;
@@ -70,9 +55,9 @@ main.resume {
           font-size: $base-font-size*1;
           margin: 0;
         }
-        aside{
-          &.timeline{
-            text-align:right;
+        aside {
+          &.timeline {
+            text-align: right;
           }
         }
       }
@@ -85,10 +70,9 @@ main.resume {
       }
 
     }
-    article{
+    article {
       margin-left: $base-spacing;
     }
-
 
     &#projects {
       article.project {
@@ -113,4 +97,5 @@ main.resume {
   }
 }
 
+@import "dynamic_content";
 @import "projects";

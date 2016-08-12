@@ -1,5 +1,57 @@
 <article>
-    {{model.name}}
+    <header>
 
-{{outlet}}
+        {{#if model.icon}}
+            <img src="assets/images/{{or model.icon.src model.icon}}" alt={{or model.icon.alt model.name}}>
+        {{/if}}
+        <h1 style="color: {{model.color.primary}};">{{or model.title model.name}}</h1>
+        {{#if model.title}}
+            <h2 style="color: {{model.color.primary}};">{{model.name}}</h2>
+        {{/if}}
+        {{#if model.tagline}}
+            <h4>{{model.tagline}}</h4>
+        {{/if}}
+    </header>
+
+    {{#if model.description}}
+        <section class="description">
+            <p>{{model.description}}</p>
+        </section>
+    {{/if}}
+    {{#if model.detailedBackground}}
+        <section class="detailed-background">
+            <p>{{model.detailedBackground}}</p>
+        </section>
+    {{/if}}
+    {{#if model.content}}
+        <ul>
+            {{#each model.content as |val|}}
+                <li>{{val}}</li>
+            {{/each}}
+        </ul>
+    {{/if}}
+    {{#if model.screenshots}}
+        {{#slick-carousel
+        class="ember-carousel"
+        autoplay=true
+        autoplaySpeed=2000
+        slidesToShow=1
+        slidesToScroll=1
+        dots=true
+        fade=true}}
+            {{#each model.screenshots   as |s|}}
+                <div><img src={{s}}></div>
+            {{/each}}
+
+        {{/slick-carousel}}
+    {{/if}}
+    {{#if model.technologies}}
+        <section class="technologies">
+            {{#each model.technologies as |skill|}}
+                {{skill/skill-display modelId=skill}}
+            {{/each}}
+
+        </section>
+    {{/if}}
+    {{outlet}}
 </article>

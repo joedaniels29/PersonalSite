@@ -1,11 +1,38 @@
 @mixin grid-item-columns($columns) {
   width: (100% / 12) * $columns;
 }
-main.projects{
 
+main.projects {
 
-  article#project-select, article#project{
-    min-height:1000px;
+  article#project-select, article#project {
+    min-height: 1000px;
+  }
+
+  header {
+    h1 {
+      font-weight: 100;
+      font-size: $base-font-size*4;
+    }
+    h2 {
+      font-size: $base-font-size*2;
+      font-weight: 200;
+    }
+    h4 {
+      font-size: $base-font-size*1.5;
+      font-weight: 300;
+    }
+  }
+  section.description {
+    p {
+      font-size: $base-font-size*1.2;
+      font-weight: 200;
+    }
+  }
+  ul{
+    li{
+      font-size: $base-font-size;
+      font-weight: 300;
+    }
   }
 
   .grid-items {
@@ -15,14 +42,7 @@ main.projects{
     $large-screen: 53.75em !default;
     $grid-items-background: $base-background-color;
     $grid-item-background: desaturate($action-color, 30%);
-    $grid-item-colors:
-            desaturate($action-color, 30%),
-            #8b21a5,
-            #bebd13,
-            #98C79A,
-            #a80022,
-            #BDCC97,
-            #979EA0;
+
     $grid-item-border-size: 9px;
     $grid-item-columns: 4;
     $grid-item-big-columns: 8;
@@ -47,7 +67,7 @@ main.projects{
       text-decoration: none;
       transition: all 0.2s ease-in-out;
       width: 100%;
-
+      background-size: cover;
       @include media($large-screen) {
         @include grid-item-columns($grid-item-columns);
       }
@@ -57,13 +77,15 @@ main.projects{
           $background-from-list: nth($grid-item-colors, $i);
           background-color: $background-from-list;
           box-shadow: inset 0 0 1px 2px darken($background-from-list, 10%);
-
+          @if (nth($grid-item-img, $i) != none) {
+            @include retina-image(nth($grid-item-img, $i), 215 800)
+          }
           &:focus,
           &:hover {
             background-color: darken($background-from-list, 10%);
-            background-position: top;
-            background-repeat: no-repeat;
-            background-size: cover;
+            //background-position: top;
+            //background-repeat: no-repeat;
+
           }
         }
       }
