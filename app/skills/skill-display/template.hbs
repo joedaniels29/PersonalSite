@@ -1,0 +1,15 @@
+{{#if model.logo}}
+    {{hosted-img pch="skill/icon" name=model.id}}
+    {{else}}
+    {{#if model.icon}}
+        {{hosted-img name=model.id}}
+
+        {{#very-custom-text pch="skill/icon" tag="footer"}}
+            {{model.title}}
+        {{/very-custom-text}}
+    {{else}}
+        {{#very-custom-text tag="footer"}}
+            {{model.title}}
+        {{/very-custom-text}}
+    {{/if}}
+{{/if}}

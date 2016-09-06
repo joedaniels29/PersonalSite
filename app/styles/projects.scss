@@ -28,8 +28,8 @@ main.projects {
       font-weight: 200;
     }
   }
-  ul{
-    li{
+  ul {
+    li {
       font-size: $base-font-size;
       font-weight: 300;
     }
@@ -71,7 +71,36 @@ main.projects {
       @include media($large-screen) {
         @include grid-item-columns($grid-item-columns);
       }
+      img {
+        display: block;
+        height: 5em;
+        margin: 0 auto 1em;
+      }
+      h1 {
+        color: $grid-item-color;
+        font-size: $base-font-size * 3.6;
+        font-weight: 100;
+        height: 80px;
+        margin-bottom: 20px;
+      }
+      h2 {
+        color: $grid-item-color;
+        font-size: $base-font-size * 2.2;
+        font-weight: 300;
+        margin-bottom: 0.0em;
+      }
+      aside {
+        color: white
+      }
+      p {
+        color: transparentize($grid-item-color, 0.3);
+        line-height: 1.5em;
+        margin: auto;
 
+        @include media($medium-screen) {
+          max-width: 70%;
+        }
+      }
       @for $i from 1 through length($grid-item-colors) { // assign colors from $grid-item-colors list
         &:nth-child(#{$i}) {
           $background-from-list: nth($grid-item-colors, $i);
@@ -89,27 +118,29 @@ main.projects {
           }
         }
       }
-    }
+      &.moar-spacing {
+        img {
+          margin-bottom: 30px;
+        }
+        h2 {
+          margin: 0;
+          font-size: $base-font-size * 1.8;
+        }
+      }
+      &.less-spacing {
+        img {
+          margin-bottom: 20px;
+        }
+        h2 {
+          margin: 0;
+          font-size: $base-font-size * 1.8;
+        }
+      }
+      &.grid-item-white-glow{
+        h1, h2 {
+          text-shadow: 0 0 7px white;
 
-    .grid-item img {
-      display: block;
-      height: 3em;
-      margin: 0 auto 1em;
-    }
-
-    .grid-item h1 {
-      color: $grid-item-color;
-      font-size: 1.3em;
-      margin-bottom: 0.4em;
-    }
-
-    .grid-item p {
-      color: transparentize($grid-item-color, 0.3);
-      line-height: 1.5em;
-      margin: auto;
-
-      @include media($medium-screen) {
-        max-width: 70%;
+        }
       }
     }
 

@@ -3,7 +3,7 @@ GEM
   specs:
     mini_magick (4.5.1)
 
-PLATFORMS
+PLATFORM
   ruby
 
 DEPENDENCIES

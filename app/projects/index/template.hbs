@@ -3,23 +3,31 @@
         {{#each model as |m|}}
             <a {{action "transition" "projects.glob" m.id}}
                style={{concat
-               "background-color:" m.color.primary ";"
                (if (and m.background m.background.image)
                 (concat "background-image: url(" "assets/images/" m.background.image ");")
-                (if m.background
-                    (concat "background-color:" m.color.primary ";")
-                    )
+                (if m.background (concat "background-color:" m.background.color ";"))
                )
                }}
 
                class={{join " " (flatten (array "grid-item" m.customClasses))}}>
 
                 {{#if m.icon}}
-                    <img src="assets/images/{{or m.icon.src m.icon}}" alt={{or m.icon.alt m.name}}/>
+                    <img src="assets/images/icon/{{m.icon.src}}" alt={{or m.icon.alt m.name}}/>
                 {{/if}}
 
-                <h1>{{m.name}}</h1>
-                <aside>{{m.description}}</aside>
+                {{#if m.title}}
+                    <h1 style={{concat
+                    "color:" (or m.color.text m.color.primary) ";"
+                    }}>{{m.title}}</h1>
+                {{/if}}
+
+                {{#if m.name}}
+                    <h2 style={{concat
+                    "color:" (or m.color.text m.color.primary) ";"
+                    }}>{{m.name}}</h2>
+
+                {{/if}}
+                <aside style="{{if m.color.copy (join " " (array "color:" m.color.copy ";"))}}">{{m.tagline}}</aside>
             </a>
 
         {{/each}}
