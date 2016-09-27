@@ -1,0 +1,21 @@
+{
+  "company":[
+    {
+      "name": "Technology Innovation Center, Johns Hopkins Medicine",
+      "id":"jhmtic",
+      "icon":true
+    },{
+      "name": "Johns Hopkins Medicine",
+      "id":"jhm",
+      "logo":true
+    },{
+      "name": "Anacrusis llc",
+      "id":"anacrusis",
+      "logo":true
+    },{
+      "name": "Open Source",
+      "id":"github",
+      "icon":true
+    }
+  ]
+}

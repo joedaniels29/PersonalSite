@@ -2,13 +2,18 @@
 body > div.ember-view > header {
   @include outer-container();
 
-  h1 {
+  > h1 {
+    @include span-columns(6);
     font-size: 5*$base-font-size;
     font-weight: 100;
     margin: 0;
   }
-
+  > ul{
+    @include span-columns(6);
+    @include omega
+  }
   aside {
+
     text-align: right;
     > a {
 
@@ -18,7 +23,7 @@ body > div.ember-view > header {
   aside {
     flex-basis: 13em;
     flex-shrink: 0;
-    margin-bottom: $base-spacing * 2;
+    //margin-bottom: $base-spacing * 2;
     padding: 0;
     a {
       line-height: 1.5em;
@@ -36,7 +41,17 @@ body > div.ember-view > header {
 
   }
 
+  ul {
+    vertical-align: baseline;
+    text-align: center;
+    li{
+      display: inline-block;
+      padding: $base-spacing/2;
+    }
+    padding: auto;
+  }
   nav {
+    @include span-columns(12);
     $base-spacing: 1.5em !default;
     $dark-gray: #333 !default;
     $base-font-color: $dark-gray !default;

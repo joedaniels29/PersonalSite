@@ -14,7 +14,7 @@ Router.map(function() {
     // this.route('epiwatch');
     // this.route('oasis');
     // this.route('resident-worklist');
-    // this.route('peer-review');
+    this.route('credits');
     // this.route('achievements');
     this.route('glob', {path: ':project'});
   });

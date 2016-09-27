@@ -1,0 +1,253 @@
+{
+  "skill":[
+    {
+      "name": "Swift",
+      "id":"swift",
+      "icon":true
+    },
+    {
+      "name": "Objective-C",
+      "id":"ObjectiveC"
+    },
+    {
+      "name": "C",
+      "id":"C"
+    },
+    {
+      "name": "Fastlane",
+      "id":"fastlane",
+      "logo":true
+    },
+    {
+      "name": "C++",
+      "id":"C++"
+    },
+    {
+      "name": "ReactiveCocoa",
+      "id":"reactiveCocoa",
+      "logo":true
+    },
+    {
+      "name": "Core Data",
+      "id":"coreData",
+      "icon":true
+    },
+    {
+      "name": "Ruby",
+      "id":"ruby",
+      "icon":true
+    },
+    {
+      "name": "Rails",
+      "id":"rails",
+      "logo":true
+    },
+    {
+      "name": "JRuby",
+      "id":"jruby",
+      "logo":true
+    },
+    {
+      "name": "Gem Development",
+      "id":"GemDevelopment"
+    },
+    {
+      "name": "ActiveRecord",
+      "id":"ActiveRecord"
+    },
+    {
+      "name": "Javascript (ES6)",
+      "id":"javascript",
+      "icon":true
+    },
+    {
+      "name": "Ember.js",
+      "id":"ember",
+      "logo":true
+
+    },{
+      "name": "Ember Data",
+      "id":"emberData",
+      "logo":true
+    },
+    {
+      "name": "jQuery",
+      "id":"jquery",
+      "logo":true
+    },
+    {
+      "name": "CoffeeScript",
+      "id":"coffeeScript",
+      "logo":true
+    },
+    {
+      "name": "Cordova",
+      "id":"cordova",
+      "logo":true
+    },
+    {
+      "name": "Node.js",
+      "id":"nodejs",
+      "logo":true
+    },
+    {
+      "name": "NPM Package Development",
+      "id":"npm",
+      "logo":true
+    },
+    {
+      "name": "Express",
+      "id":"Express"
+    },
+    {
+      "name": "Appgyver Supersonic/Steroids",
+      "id":"appgyver",
+      "logo":true
+    },
+    {
+      "name": "HTML",
+      "id":"html",
+      "logo":true
+    },
+    {
+      "name": "SCSS",
+      "id":"sass",
+      "logo":true
+    },
+    {
+      "name": "LESS",
+      "id":"less",
+      "logo":true
+    },
+    {
+      "name": "Bootstrap",
+      "id":"bootstrap",
+      "logo":true
+    },
+    {
+      "name": "Git",
+      "id":"git",
+      "logo":true
+    },
+    {
+      "name": "SDLC",
+      "id":"SDLC"
+    },
+    {
+      "name": "Agile",
+      "id":"Agile"
+    },
+    {
+      "name": "Wireframing",
+      "id":"Wireframing"
+    },
+    {
+      "name": "Mockups",
+      "id":"Mockups"
+    },
+    {
+      "name": "Prototyping",
+      "id":"Prototyping"
+    },
+    {
+      "name": "PostgreSQL",
+      "id":"PostgreSQL",
+      "logo":true
+    },
+    {
+      "name": "Python",
+      "id":"python",
+      "icon":true
+    },
+    {
+      "name": "Asterisk PBX with WebRTC",
+      "id":"asterisk",
+      "logo":true
+    },
+    {
+      "name": "ZSH",
+      "id":"ZSH"
+    },
+    {
+      "name": "Bash",
+      "id":"Bash"
+    },
+    {
+      "name": "Mathematica",
+      "id":"mathematica",
+      "icon":true
+    },
+    {
+      "name": "Lisp",
+      "id":"lisp"
+    },
+    {
+      "name": "Core Animation",
+      "id":"coreanimation",
+      "icon":true
+    },
+    {
+      "name": "HealthKit",
+      "id":"healthkit",
+      "icon":true
+    },
+    {
+      "name": "ResearchKit",
+      "id":"researchkit",
+      "icon":true
+    },
+    {
+      "name": "Twitter Fabric",
+      "id":"fabric",
+      "logo":true
+    },
+    {
+      "name": "Crashlytics",
+      "id":"crashlytics",
+      "logo":true
+    },
+    {
+      "name": "Atlassian Bamboo",
+      "id":"bamboo",
+      "logo":true
+    },
+    {
+      "name": "CocoaPods",
+      "id":"pod",
+      "logo":true
+    }
+
+  ],
+  "platform":[
+    {
+      "name": "iPad",
+      "id":"ipad",
+      "logo":true
+    },{
+      "name": "Android",
+      "id":"android",
+      "options":{
+        "gravity": "center",
+        "resize": "200x200"
+      },
+      "logo":true
+    },{
+      "name": "iPhone",
+      "id":"iphone",
+      "logo":true
+    },{
+      "name": "web",
+      "id":"web",
+      "logo":true
+    },{
+      "name": "Apple Watch",
+      "id":"watch",
+      "options":{
+        "gravity": "center",
+        "resize": "120x120"
+      },
+      "logo":true
+    }
+
+  ]
+}

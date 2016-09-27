@@ -1,15 +1,16 @@
 {{#if model.logo}}
-    {{hosted-img pch="skill/icon" name=model.id}}
-    {{else}}
-    {{#if model.icon}}
-        {{hosted-img name=model.id}}
+    {{application/hosted-img class='logo' title=model.name pch="skill/logo" name=model.id}}
+{{else}}
 
-        {{#very-custom-text pch="skill/icon" tag="footer"}}
-            {{model.title}}
+    {{#if model.icon}}
+        {{application/hosted-img class='icon' title=model.name pch="skill/icon"  name=model.id}}
+
+        {{#very-custom-text  tag="footer"}}
+            {{model.name}}
         {{/very-custom-text}}
     {{else}}
-        {{#very-custom-text tag="footer"}}
-            {{model.title}}
-        {{/very-custom-text}}
+        {{!--{{#very-custom-text tag="footer"}}--}}
+            {{!--{{model.name}}--}}
+        {{!--{{/very-custom-text}}--}}
     {{/if}}
 {{/if}}

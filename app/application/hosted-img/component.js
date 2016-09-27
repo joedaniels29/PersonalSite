@@ -4,12 +4,13 @@ import Poll  from '../../poll/poll';
 export default Ember.Component.extend({
     idx: 0,
     tagName: "img",
-    bindAttrs:["src"],
+    attributeBindings:["src", "title"],
 
-    src:Ember.computed("attrs.name","pch", function(){
+    src: Ember.computed("attrs.name","pch", function(){
         var src = this.get("name");
         var pch = this.get("pch");
-        return `assets/${pch ? pch+"/": "" }${src}`;
+        var ext = src && src.split('.').length > 1 ? "" : "_2x.png";
+        return `assets/images/${pch ? pch+"/": "" }${src}${ext}`;
     }),
 
     // classNameBindings:[""],
@@ -24,7 +25,7 @@ export default Ember.Component.extend({
     }),
     willDestroyElement(){
         this._super(...arguments);
-        this.get("poll").stop();
+        this.get("poll") && this.get("poll").stop();
         this.set("poll", null);
     }
 

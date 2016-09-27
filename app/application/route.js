@@ -1,7 +1,7 @@
 import Ember from 'ember';
-import Projects from '../projects/outline';
+import Projects from 'personal-site/skills/skills';
 export default Ember.Route.extend({
     model(){
-        return Projects['skills'].map(o => o["name"]);
+        return Projects['skill'].map(o => o["name"]);
     }
 });

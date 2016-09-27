@@ -1,0 +1,28 @@
+.skillBlock {
+  display: inline-block;
+  margin: $base-spacing;
+  text-align: center;
+  img.logo {
+    width: 200px;
+
+  }
+  img.icon {
+    width: 80px;
+
+  }
+}
+
+.platforms {
+  .skillBlock {
+    margin: 0;
+    display: inline-block;
+    text-align: center;
+    img.logo {
+      width: 100px;
+
+    }
+    img.icon {
+      width: 80px;
+    }
+  }
+}

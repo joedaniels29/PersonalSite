@@ -17,6 +17,10 @@ article.contract > header > aside.timeline {
   overflow: visible;
 }
 
+code{
+  white-space: pre;
+}
+
 main {
   @include outer-container();
 }
@@ -99,3 +103,5 @@ main.resume {
 
 @import "dynamic_content";
 @import "projects";
+@import "skills";
+@import "project";
