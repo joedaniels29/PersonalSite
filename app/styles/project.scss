@@ -49,7 +49,20 @@ main.projects {
         }
       }
     }
+    section.detailed-background{
+      p{
+      white-space: pre-line;
 
+      }
+    }
+    section.tweets{
+      ul{
+        li{
+          width: 350px;
+          display: inline-block;
+        }
+      }
+    }
     section.readme {
 
       h1 {

@@ -12,8 +12,10 @@ body > div.ember-view > header {
     @include span-columns(6);
     @include omega
   }
-  aside {
 
+  aside {
+    @include span-columns(8);
+    @include omega;
     text-align: right;
     > a {
 
@@ -59,7 +61,9 @@ body > div.ember-view > header {
     $stats-color: lighten($action-color, 10%);
 
     padding: $base-spacing / 2;
-
+    section{
+      @include span-columns(4);
+    }
     ul {
       padding: 0;
     }

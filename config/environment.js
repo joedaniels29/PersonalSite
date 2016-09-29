@@ -18,7 +18,9 @@ module.exports = function(environment) {
       // when it is created
     }
   };
-
+  ENV.googleAnalytics = {
+    webPropertyId: 'UA-84952409-1'
+  };
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;

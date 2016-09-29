@@ -7,7 +7,7 @@ export default Ember.Route.extend({
         for (var p in Projects) {
             projects = projects.concat(Projects[p]);
         }
-        return projects;
+        return projects.filter((o) => !o["hidden"]);
     }
 
 });

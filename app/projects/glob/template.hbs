@@ -93,6 +93,14 @@
     {{/if}}
 
 
+    {{#if model.tweets}}
+        <section class="tweets">
+            <h3>In the Tweets!</h3>
+            {{application/tweets-group model=model.tweets}}
+        </section>
+    {{/if}}
+
+
     {{#if model.platforms}}
         <section class="platforms">
             <h3>Avalable on:</h3>

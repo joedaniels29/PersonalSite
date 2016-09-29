@@ -9,6 +9,8 @@
     "neat": "~1.7.2",
     "ionicons": "^2.0.1",
     "slick-carousel": "1.5.8",
-    "showdown": "^1.4.3"
+    "showdown": "^1.4.3",
+    "masonry": "^4.1.1",
+    "imagesloaded": "^4.1.1"
   }
 }

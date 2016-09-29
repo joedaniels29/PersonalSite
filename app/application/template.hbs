@@ -12,8 +12,9 @@
     </ul>
 
     <nav>
-        {{#link-to "index"}}Resume{{/link-to}}
-        {{#link-to "projects"}}Projects{{/link-to}}
+        <section>
+            {{#link-to "index"}}Resume{{/link-to}}
+            {{#link-to "projects"}}Projects{{/link-to}}</section>
         {{!--{{#link-to "projects"}}Blog{{/link-to}}--}}
         <aside>{{application/lett-r models=model}}</aside>
     </nav>

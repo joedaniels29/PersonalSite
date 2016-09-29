@@ -4,7 +4,7 @@ require 'mini_magick'
 require 'fileutils'
 
 install = true
-projects = JSON.parse(File.open('app/payload.json', 'rb').read).values.flatten
+projects = JSON.parse(File.open('app/payload.json', 'rb').read).values.flatten.reject{|x| x["hidden"]}
 other_types = JSON.parse(File.open('app/skills/skills.json', 'rb').read)
 other_types['company'] = JSON.parse(File.open('app/skills/company.json', 'rb').read)['company']
 

@@ -7,7 +7,7 @@
       "fullName": "Radiologists Engaging and Collaborating in Healthcare (REACH)",
       "links": {
       },
-      "detailedBackground": "In the old days before PACS (Image servers for Radiological Images) existed, clinicians would go down to the Radiology film rooms to consult with Radiologists. Clinicians and radiologists used to spend a fair amount of time together, discussing and interpreting medical Images, providing consultation in real time without waiting for the final report from the radiology department.\nNowadays this face to face communication has diminished to non-existence with the advancement of RIS and PACS technologies, all radiological images and the generated reports are written, signed, and sent electronically.  As a result, Radiologists' productivity has increased, enabling them to read more and more cases every day; a radiologist goes through a worklist of radiology examinations every day. Because they see more cases per capta, their time has become more valuable. They are located in dark reading rooms, where clinicians rarely visit due to the geographical inconvenience dedicated reading rooms create. Though modern technological advances have increased turnaround time for radiology reports, communication and consults generally happen only after coordinating  between two stacked schedules, over phone while both parties have the image viewer open, both doing their best to always be looking at the same images (usually among many in a given procedure). They attempt to discuss the same artifacts on images while talking over the phone and there is no face to face contact. Organic interaction between clinicians and radiologists has almost disappeared. \nWe call this a form of “Signal Loss”: Analog phones do not do a good job of coordinate schedules, they also drop all visual feedback that humans use to communicate.",
+      "detailedBackground": "In the old days before the  PACS (Image servers for Radiological Images), clinicians would walk to Radiology film rooms to consult with Radiologists. Clinicians and radiologists used to spend lots of time together, discussing and interpreting medical Images. \n\nNowadays this face to face communication is virtually nonexistant. Radiological images becmome a formal written report that's signed and sent electronically.  As a result, Radiologists' productivity has increased—they're reading more and more cases every day but at a cost: \n\n Consults generally happen only after scheduling, and then usually happen over the phone where both parties have their image viewer open, trying their best to keep their screens in sync (there can be hundereds or thousands of images in a procedure).\n\n REACH solves these problems by reintroducing face to face contact through an iPad VoIP session. REACH has a search interface to find exams, an embedded clinical viewer that syncs between the people on the call, and an intuitive UI to make it easy to connect.",
       "video": {
         "link": "http://youtu.be/XM1nrW_uLqM",
         "embed": "https://www.youtube.com/embed/XM1nrW_uLqM"
@@ -33,7 +33,10 @@
       "logo": "",
       "headshot": "",
       "screenshots": [],
-      "news": [],
+      "tweets":[
+        "<blockquote class=\"twitter-tweet\" data-cards=\"hidden\" data-lang=\"en\"><p lang=\"en\" dir=\"ltr\">VIDEO: adapting <a href=\"https://twitter.com/hashtag/digitalhealth?src=hash\">#digitalhealth</a> techniques to improve patient outcomes? iPad-based REACH conferencing is one way: <a href=\"http://t.co/8M1EAAXdaB\">http://t.co/8M1EAAXdaB</a></p>&mdash; Johns Hopkins TIC (@JHMTIC) <a href=\"https://twitter.com/JHMTIC/status/527119475687317504\">October 28, 2014</a></blockquote><script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>",
+        "<blockquote class=\"twitter-tweet\" data-cards=\"hidden\" data-lang=\"en\"><p lang=\"en\" dir=\"ltr\">Excited to announce agreement with Johns Hopkins <a href=\"https://twitter.com/hashtag/RSNA14?src=hash\">#RSNA14</a> for REACH - Real Time Video Consultation <a href=\"https://twitter.com/hashtag/imaging3?src=hash\">#imaging3</a> <a href=\"http://t.co/aYC4dYqVPL\">http://t.co/aYC4dYqVPL</a>  <a href=\"https://twitter.com/JHMTIC\">@JHMTIC</a></p>&mdash; Analytical (@Analyticalinfo) <a href=\"https://twitter.com/Analyticalinfo/status/540546634284040193\">December 4, 2014</a></blockquote><script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>"
+      ],
       "customClasses": [
         "grid-item-big",
         "less-spacing"
@@ -42,6 +45,15 @@
       "platforms": [
         "ipad",
         "web"
+      ],
+      "news": [
+        {
+          "title": "Analytical Informatics Announces License Agreement with Johns Hopkins University for REACH Radiologist Video Collaboration Software",
+          "date": " 12.04.14",
+          "host": "Analytical Informatics, Inc.",
+          "url": "http://www.analytical.info/news/jhu",
+          "comment": "REACH is built on the Analytical Informatics SDK. AI's platform (AI Bridge) provides a data warehouse that acts as a middle layer between client applications and the untenable HL7 messages that are so foundational to hospital IT systems."
+        }
       ],
       "technologies": [
         "ActiveRecord",
@@ -55,6 +67,7 @@
         "emberData",
         "asterisk"
       ],
+
       "content": [
         "Designed/Built/Maintain iOS application in Swift and Objective-C.",
         "Embedded enterprise clinical medical image viewer into native iOS client application.",
@@ -85,7 +98,7 @@
       "screenshots": [],
       "news": [],
       "description": "Clinical data research tool",
-      "detailedDescription": "Beginning clinical research requires the discovery of a 'cohort'. Finding subjects that match a given criteria and exluding those that match exclusion critiera, . This is often performed via manual search through any number of data sources (e.g. PACS, RIS, EMR, billing systems, etc.) and manual entry into a generic spreadsheet. The number of data points are often extremely large, even for small studies involving a few dozen or a few hundred patients, and such manual search and entry is therefore exceedingly time consuming and prone to human errors. Furthermore, manipulation of the dataset following the establishment of the cohort (i.e. during data entry) can result in errors and data loss, leading many researchers to save numerous different versions of their working dataset. The process of blinding data (for research integrity) and protecting patient identifiers (for ethical integrity) is also a burdensome, nonstandardized task that is subject to mistakes and noncompliance. \nA robust software solution that automates any of the above processes would save time and reduce human error. Furthermore, providing a customizable user interface in which to work would decrease errors when manipulating the dataset, allow easier collaboration between researchers, and save time given appropriate form design. Finally, robust data governance would decrease errors, allow more efficient error-discovery, and provide a safer means for multiple researchers to contribute to a single project.",
+      "detailedBackground": "Beginning clinical research requires the discovery of a 'cohort'—the subjets of your research. This is often performed via manual search through any number of data sources (e.g. PACS, RIS, EMR, billing systems, etc.) and manual entry into a generic spreadsheet. This cohort building / query process usually produces enormus numbers of data points, even for small studies of a few dozen or a few hundred patients. The Process is, therfore,  exceedingly time consuming and prone to human errors. \n The process of blinding data (for research integrity) and protecting patient identifiers (for ethical integrity) is also a burdensome, nonstandardized task that is subject to mistakes and noncompliance. \n\nOASIS attempts to solve these problems. OASIS is a robust software solution that automates these arduous tasks. Oasis provides a UI taylored towards ingesting and manipulating these 'cohorts.' Oasis allows a researcher to attach custom metadata to exams, and to annotate studies with state labels in order to track and document exclusion critiria.",
       "platforms": [
         "web"
       ],
@@ -132,7 +145,7 @@
       },
       "logo": "",
       "headshot": "",
-      "detailedBackground": "Johns Hopkins EpiWatch™ is an app for Apple Watch™ and research study. EpiWatch helps you manage your epilepsy by tracking your seizures and possible triggers, medications and side effects. You can view this information at any time, and a dashboard lets you share a summary of the data with your doctor or caregiver if you want. With EpiWatch, you can also send a message to family members or caregivers to let them know when you are tracking a seizure.",
+      "detailedBackground": "Johns Hopkins EpiWatch™ is an app for Apple Watch™ and research study. \n\nEpiWatch helps you manage your epilepsy by tracking your seizures and possible triggers, medications and side effects. You can view this information at any time, and a dashboard lets you share a summary of the data with your doctor or caregiver if you want. With EpiWatch, you can also send a message to family members or caregivers to let them know when you are tracking a seizure.",
       "screenshots": [],
       "news": [
         {
@@ -167,6 +180,13 @@
           "url": "http://hub.jhu.edu/2015/10/15/apple-watch-epiwatch/"
         }
       ],
+      "tweets":[
+        "<blockquote class=\"twitter-tweet\" data-lang=\"en\"><p lang=\"en\" dir=\"ltr\">TIC is now involved in <a href=\"https://twitter.com/hashtag/EpiWatch?src=hash\">#EpiWatch</a>! The <a href=\"https://twitter.com/hashtag/app?src=hash\">#app</a> helps epilepsy patients detect seizures and improve their quality of life <a href=\"https://t.co/xnQFkR6Cc8\">https://t.co/xnQFkR6Cc8</a></p>&mdash; Johns Hopkins TIC (@JHMTIC) <a href=\"https://twitter.com/JHMTIC/status/762724368065630212\">August 8, 2016</a></blockquote> <script async src=\"http://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>",
+        "<blockquote class=\"twitter-tweet\" data-lang=\"en\"><p lang=\"en\" dir=\"ltr\">Way to go EpiWatch! SXSW Innovation Award Finalists honoring most exciting tech in the connected world <a href=\"https://twitter.com/JHMTIC\">@JHMTIC</a> <a href=\"https://t.co/HJrXpsp6nA\">https://t.co/HJrXpsp6nA</a></p>&mdash; Paul Nagy (@pgnagy) <a href=\"https://twitter.com/pgnagy/status/695681838778556418\">February 5, 2016</a></blockquote> <script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>",
+        "<blockquote class=\"twitter-tweet\" data-lang=\"en\"><p lang=\"en\" dir=\"ltr\">Way to go EpiWatch! SXSW Innovation Award Finalists honoring most exciting tech in the connected world <a href=\"https://twitter.com/JHMTIC\">@JHMTIC</a> <a href=\"https://t.co/HJrXpsp6nA\">https://t.co/HJrXpsp6nA</a></p>&mdash; Paul Nagy (@pgnagy) <a href=\"https://twitter.com/pgnagy/status/695681838778556418\">February 5, 2016</a></blockquote> <script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>",
+        "<blockquote class=\"twitter-tweet\" data-cards=\"hidden\" data-lang=\"en\"><p lang=\"en\" dir=\"ltr\">Johns Hopkins epilepsy study is first <a href=\"https://twitter.com/hashtag/ResearchKit?src=hash\">#ResearchKit</a> app (EpiWatch) to use Apple watch <a href=\"https://twitter.com/hashtag/JHResearchKit?src=hash\">#JHResearchKit</a> : <a href=\"https://t.co/jBJCGYH2CW\">https://t.co/jBJCGYH2CW</a></p>&mdash; Johns Hopkins TIC (@JHMTIC) <a href=\"https://twitter.com/JHMTIC/status/657178884560068608\">October 22, 2015</a></blockquote> <script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>",
+        "<blockquote class=\"twitter-tweet\" data-lang=\"en\"><p lang=\"en\" dir=\"ltr\">Dr. Crone speaking now about EpiWatch for <a href=\"https://twitter.com/hashtag/JHResearchKit?src=hash\">#JHResearchKit</a> event <a href=\"https://twitter.com/JHMTIC\">@JHMTIC</a> <a href=\"https://t.co/FtAxYoAw3a\">pic.twitter.com/FtAxYoAw3a</a></p>&mdash; jazzytea (@jazzytea) <a href=\"https://twitter.com/jazzytea/status/656510403271376896\">October 20, 2015</a></blockquote> <script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>"
+      ],
       "description": "",
       "platforms": [
         "iphone",
@@ -187,6 +207,7 @@
         "Implemented Dynamic Type, Auto Layout throughout App.",
         "Lead iOS 10/WatchOS 3 release.",
         "Configured CI testing with Bamboo and Fastlane. ",
+        "Improved data integrety by caching requests on disk until a successful response is confirmed.",
         "Configured Fastlane Match to simplify the management of Apple Developer Certificates/Keys."
       ]
 
@@ -222,6 +243,7 @@
       "content": [
         "Developed Ember.js front end.",
         "Embedded enterprise clinical medical image viewer into native iOS client application.",
+        "Created a HIPPA complient data export UI/functionality for permitted administrators to create Excel or CSV exports of exam data. This functionality helps administrators audit resident performance.",
         "Used daily by over 80 clinicians and radiology residents at Johns Hopkins Hospital."
       ]
     },
@@ -229,7 +251,8 @@
       "name": "Peer Review",
       "tagline": "federal departmental compliance",
       "color": {
-        "primary": "blue"
+        "primary": "black",
+        "text": "white"
       },
       "background": "",
       "customClasses": [],
@@ -238,23 +261,34 @@
       "logo": "",
       "headshot": "",
       "screenshots": [],
-      "news": [],
       "description": "",
-      "platforms": [],
+      "platforms": ["web"],
       "technologies": [
         "rails",
         "ruby",
         "ember"
       ],
+
+      "news": [
+        {
+          "title": "Analytical to Launch Advanced Peer Review at SIIM 2016 in Portland.",
+          "date": "06.23.16",
+          "host": "Analytical Informatics, Inc.",
+          "url": "http://www.analytical.info/news/avp",
+          "comment": "Since the time I worked on the app, Peer Review has since been comercialized by the awesome team at Analytical Informatics! You can now find the application at other hospitals that have purhcaced the AI Bridge software.\nNote: This article describes features implemented after my time as lead on this project."
+        }
+      ],
       "content": [
-        "Used by 80 clinicians and radiology residents at Johns Hopkins Hospital.",
+        "Used by 80 clinicians and radiology residents daily at Johns Hopkins Hospital.",
         "Embedded enterprise clinical medical image viewer into native iOS client application.",
-        "Managed development for 7 months during a senior developer’s leave of absence.",
-        "Implemented Patient search functionality, leading to deployment at new hospital."
+        "Managed all development for 7 months during a senior developer’s leave of absence.",
+        "Deployed several point releases to production.",
+        "Implemented Patient search functionality, leading to major deployment at new hospital."
       ]
     },
     {
       "name": "Accomplishments",
+      "hidden": true,
       "tagline": "An iOS teleconsultation application connecting radiologists to clinicians.",
       "color": {
         "primary": "red"
@@ -273,9 +307,8 @@
       "description": "",
       "platforms": [],
       "technologies": [
-        "Rails",
-        "GemDevelopment",
-        "NPM",
+        "rails",
+        "npm",
         "ember"
       ],
       "content": [
@@ -283,7 +316,52 @@
         "3 published NPM packages for Ember-CLI."
       ]
     }
-  ],
+  ],  "oss": [
+  {
+    "name": "10Clock",
+    "fullName": "iOS 10 Clock",
+    "color": {
+      "text": "white",
+      "copy": "#01325c",
+      "primary": "#C100FF",
+      "secondary": "#FF009F"
+    },
+    "background": {
+      "src": "10Clock",
+      "card-size": 1,
+      "color": "white"
+    },
+    "customClasses": [
+      "grid-item-white-glow"
+    ],
+    "id": "10Clock",
+    "logo": "",
+    "headshot": "",
+    "screenshots": [],
+    "readme": {
+      "markdown": "https://raw.githubusercontent.com/joedaniels29/10Clock/master/README.md"
+    },
+    "news": [],
+    "platforms": [
+      "iphone",
+      "ipad"
+    ],
+    "links": {
+      "Github": "https://github.com/joedaniels29/SwiftClock",
+      "CocoaPods": "https://github.com/joedaniels29/SwiftClock",
+      "Report an Issue": "https://github.com/joedaniels29/SwiftClock/issues"
+    },
+    "description": "",
+    "technologies": [
+      "coreanimation",
+      "pod",
+      "swift"
+    ],
+    "content": [
+      "Constructed Metronome in Javascript using WebAudio API for Cordova iOS application."
+    ]
+  }
+],
   "contract": [
     {
       "name": "ReadAhead Hybrid",
@@ -380,52 +458,6 @@
         "Constructed Metronome in Javascript using WebAudio API for Cordova iOS application.",
         "Implemented in-app purchases to allow the user to buy lessons.",
         "Implemented open source Cordova plugin to access iOS Microphone."
-      ]
-    }
-  ],
-  "oss": [
-    {
-      "name": "10Clock",
-      "fullName": "iOS 10 Clock",
-      "color": {
-        "text": "white",
-        "copy": "#01325c",
-        "primary": "#C100FF",
-        "secondary": "#FF009F"
-      },
-      "background": {
-        "src": "10Clock",
-        "card-size": 1,
-        "color": "white"
-      },
-      "customClasses": [
-        "grid-item-white-glow"
-      ],
-      "id": "10Clock",
-      "logo": "",
-      "headshot": "",
-      "screenshots": [],
-      "readme": {
-        "markdown": "https://raw.githubusercontent.com/joedaniels29/10Clock/master/README.md"
-      },
-      "news": [],
-      "platforms": [
-        "iphone",
-        "ipad"
-      ],
-      "links": {
-        "Github": "https://github.com/joedaniels29/SwiftClock",
-        "CocoaPods": "https://github.com/joedaniels29/SwiftClock",
-        "Report an Issue": "https://github.com/joedaniels29/SwiftClock/issues"
-      },
-      "description": "",
-      "technologies": [
-        "coreanimation",
-        "pod",
-        "swift"
-      ],
-      "content": [
-        "Constructed Metronome in Javascript using WebAudio API for Cordova iOS application."
       ]
     }
   ]
