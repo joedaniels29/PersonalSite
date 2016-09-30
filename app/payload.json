@@ -5,8 +5,7 @@
       "title": "REACH",
       "name": "Radiologists Engaging and Collaborating in Healthcare",
       "fullName": "Radiologists Engaging and Collaborating in Healthcare (REACH)",
-      "links": {
-      },
+      "links": [],
       "detailedBackground": "In the old days before the  PACS (Image servers for Radiological Images), clinicians would walk to Radiology film rooms to consult with Radiologists. Clinicians and radiologists used to spend lots of time together, discussing and interpreting medical Images. \n\nNowadays this face to face communication is virtually nonexistant. Radiological images becmome a formal written report that's signed and sent electronically.  As a result, Radiologists' productivity has increased—they're reading more and more cases every day but at a cost: \n\n Consults generally happen only after scheduling, and then usually happen over the phone where both parties have their image viewer open, trying their best to keep their screens in sync (there can be hundereds or thousands of images in a procedure).\n\n REACH solves these problems by reintroducing face to face contact through an iPad VoIP session. REACH has a search interface to find exams, an embedded clinical viewer that syncs between the people on the call, and an intuitive UI to make it easy to connect.",
       "video": {
         "link": "http://youtu.be/XM1nrW_uLqM",
@@ -33,7 +32,7 @@
       "logo": "",
       "headshot": "",
       "screenshots": [],
-      "tweets":[
+      "tweets": [
         "<blockquote class=\"twitter-tweet\" data-cards=\"hidden\" data-lang=\"en\"><p lang=\"en\" dir=\"ltr\">VIDEO: adapting <a href=\"https://twitter.com/hashtag/digitalhealth?src=hash\">#digitalhealth</a> techniques to improve patient outcomes? iPad-based REACH conferencing is one way: <a href=\"http://t.co/8M1EAAXdaB\">http://t.co/8M1EAAXdaB</a></p>&mdash; Johns Hopkins TIC (@JHMTIC) <a href=\"https://twitter.com/JHMTIC/status/527119475687317504\">October 28, 2014</a></blockquote><script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>",
         "<blockquote class=\"twitter-tweet\" data-cards=\"hidden\" data-lang=\"en\"><p lang=\"en\" dir=\"ltr\">Excited to announce agreement with Johns Hopkins <a href=\"https://twitter.com/hashtag/RSNA14?src=hash\">#RSNA14</a> for REACH - Real Time Video Consultation <a href=\"https://twitter.com/hashtag/imaging3?src=hash\">#imaging3</a> <a href=\"http://t.co/aYC4dYqVPL\">http://t.co/aYC4dYqVPL</a>  <a href=\"https://twitter.com/JHMTIC\">@JHMTIC</a></p>&mdash; Analytical (@Analyticalinfo) <a href=\"https://twitter.com/Analyticalinfo/status/540546634284040193\">December 4, 2014</a></blockquote><script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>"
       ],
@@ -67,7 +66,6 @@
         "emberData",
         "asterisk"
       ],
-
       "content": [
         "Designed/Built/Maintain iOS application in Swift and Objective-C.",
         "Embedded enterprise clinical medical image viewer into native iOS client application.",
@@ -129,9 +127,12 @@
         "link": "http://youtu.be/k8N6zQnNpGI",
         "embed": "https://www.youtube.com/embed/k8N6zQnNpGI"
       },
-      "links": {
-        "Homepage": "hopkinsmedicine.org/epiwatch"
-      },
+      "links": [
+        {
+          "name": "Homepage",
+          "link": "hopkinsmedicine.org/epiwatch"
+        }
+      ],
       "background": {
         "src": "epiwatch.png",
         "card-size": 2
@@ -180,7 +181,7 @@
           "url": "http://hub.jhu.edu/2015/10/15/apple-watch-epiwatch/"
         }
       ],
-      "tweets":[
+      "tweets": [
         "<blockquote class=\"twitter-tweet\" data-lang=\"en\"><p lang=\"en\" dir=\"ltr\">TIC is now involved in <a href=\"https://twitter.com/hashtag/EpiWatch?src=hash\">#EpiWatch</a>! The <a href=\"https://twitter.com/hashtag/app?src=hash\">#app</a> helps epilepsy patients detect seizures and improve their quality of life <a href=\"https://t.co/xnQFkR6Cc8\">https://t.co/xnQFkR6Cc8</a></p>&mdash; Johns Hopkins TIC (@JHMTIC) <a href=\"https://twitter.com/JHMTIC/status/762724368065630212\">August 8, 2016</a></blockquote> <script async src=\"http://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>",
         "<blockquote class=\"twitter-tweet\" data-lang=\"en\"><p lang=\"en\" dir=\"ltr\">Way to go EpiWatch! SXSW Innovation Award Finalists honoring most exciting tech in the connected world <a href=\"https://twitter.com/JHMTIC\">@JHMTIC</a> <a href=\"https://t.co/HJrXpsp6nA\">https://t.co/HJrXpsp6nA</a></p>&mdash; Paul Nagy (@pgnagy) <a href=\"https://twitter.com/pgnagy/status/695681838778556418\">February 5, 2016</a></blockquote> <script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>",
         "<blockquote class=\"twitter-tweet\" data-lang=\"en\"><p lang=\"en\" dir=\"ltr\">Way to go EpiWatch! SXSW Innovation Award Finalists honoring most exciting tech in the connected world <a href=\"https://twitter.com/JHMTIC\">@JHMTIC</a> <a href=\"https://t.co/HJrXpsp6nA\">https://t.co/HJrXpsp6nA</a></p>&mdash; Paul Nagy (@pgnagy) <a href=\"https://twitter.com/pgnagy/status/695681838778556418\">February 5, 2016</a></blockquote> <script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>",
@@ -200,7 +201,8 @@
         "bamboo",
         "fastlane",
         "fabric",
-        "watch"],
+        "watch"
+      ],
       "content": [
         "<i>Currently:</i>Leading development on version 2. Implemented new UI on both iPhone and Apple Watch.",
         "Implemented surveys, user tasks, and charts/dashboards using ResearchKit and HealthKit",
@@ -210,7 +212,6 @@
         "Improved data integrety by caching requests on disk until a successful response is confirmed.",
         "Configured Fastlane Match to simplify the management of Apple Developer Certificates/Keys."
       ]
-
     },
     {
       "name": "Resident Worklist",
@@ -232,7 +233,9 @@
       "screenshots": [],
       "news": [],
       "description": "Teaching tool gives resident radiologists feedback on their reports by showing a diff between their report and the final report.",
-      "platforms": ["web"],
+      "platforms": [
+        "web"
+      ],
       "technologies": [
         "rails",
         "PostgreSQL",
@@ -262,13 +265,14 @@
       "headshot": "",
       "screenshots": [],
       "description": "",
-      "platforms": ["web"],
+      "platforms": [
+        "web"
+      ],
       "technologies": [
         "rails",
         "ruby",
         "ember"
       ],
-
       "news": [
         {
           "title": "Analytical to Launch Advanced Peer Review at SIIM 2016 in Portland.",
@@ -316,52 +320,62 @@
         "3 published NPM packages for Ember-CLI."
       ]
     }
-  ],  "oss": [
-  {
-    "name": "10Clock",
-    "fullName": "iOS 10 Clock",
-    "color": {
-      "text": "white",
-      "copy": "#01325c",
-      "primary": "#C100FF",
-      "secondary": "#FF009F"
-    },
-    "background": {
-      "src": "10Clock",
-      "card-size": 1,
-      "color": "white"
-    },
-    "customClasses": [
-      "grid-item-white-glow"
-    ],
-    "id": "10Clock",
-    "logo": "",
-    "headshot": "",
-    "screenshots": [],
-    "readme": {
-      "markdown": "https://raw.githubusercontent.com/joedaniels29/10Clock/master/README.md"
-    },
-    "news": [],
-    "platforms": [
-      "iphone",
-      "ipad"
-    ],
-    "links": {
-      "Github": "https://github.com/joedaniels29/SwiftClock",
-      "CocoaPods": "https://github.com/joedaniels29/SwiftClock",
-      "Report an Issue": "https://github.com/joedaniels29/SwiftClock/issues"
-    },
-    "description": "",
-    "technologies": [
-      "coreanimation",
-      "pod",
-      "swift"
-    ],
-    "content": [
-      "Constructed Metronome in Javascript using WebAudio API for Cordova iOS application."
-    ]
-  }
-],
+  ],
+  "oss": [
+    {
+      "name": "10Clock",
+      "fullName": "iOS 10 Clock",
+      "color": {
+        "text": "white",
+        "copy": "#01325c",
+        "primary": "#C100FF",
+        "secondary": "#FF009F"
+      },
+      "background": {
+        "src": "10Clock",
+        "card-size": 1,
+        "color": "white"
+      },
+      "customClasses": [
+        "grid-item-white-glow"
+      ],
+      "id": "10Clock",
+      "logo": "",
+      "headshot": "",
+      "screenshots": [],
+      "readme": {
+        "markdown": "https://raw.githubusercontent.com/joedaniels29/10Clock/master/README.md"
+      },
+      "news": [],
+      "platforms": [
+        "iphone",
+        "ipad"
+      ],
+      "links": [
+        {
+          "name": "Github",
+          "link": "https://github.com/joedaniels29/SwiftClock"
+        },
+        {
+          "name": "CocoaPods",
+          "link": "https://github.com/joedaniels29/SwiftClock"
+        },
+        {
+          "name": "Report an Issue",
+          "link": "https://github.com/joedaniels29/SwiftClock/issues"
+        }
+      ],
+      "description": "",
+      "technologies": [
+        "coreanimation",
+        "pod",
+        "swift"
+      ],
+      "content": [
+        "Constructed Metronome in Javascript using WebAudio API for Cordova iOS application."
+      ]
+    }
+  ],
   "contract": [
     {
       "name": "ReadAhead Hybrid",
@@ -393,11 +407,20 @@
         "iphone",
         "android"
       ],
-      "links": {
-        "Homepage": "https://readaheadapp.com/",
-        "iTunes": "https://itunes.apple.com/us/app/read-ahead-hybrid-piano-sight/id1057615897?mt=8",
-        "Google Play": "https://play.google.com/store/apps/details?id=com.anacrusisllc.readahead&hl=en"
-      },
+      "links": [
+        {
+          "name": "Homepage",
+          "link": "https://readaheadapp.com/"
+        },
+        {
+          "name": "iTunes",
+          "link": "https://itunes.apple.com/us/app/read-ahead-hybrid-piano-sight/id1057615897?mt=8"
+        },
+        {
+          "name": "Google Play",
+          "link": "https://play.google.com/store/apps/details?id=com.anacrusisllc.readahead&hl=en"
+        }
+      ],
       "description": "",
       "technologies": [
         "html",
@@ -407,7 +430,6 @@
       ],
       "content": [
         "Constructed Metronome in Javascript using WebAudio API for Cordova iOS application."
-
       ]
     },
     {
@@ -444,10 +466,20 @@
       "platforms": [
         "ipad"
       ],
-      "links": {
-        "Homepage": "https://readaheadapp.com/",
-        "iTunes": "https://itunes.apple.com/us/app/read-ahead-practice-piano/id806292431?mt=8"
-      },
+      "links": [
+        {
+          "name": "Homepage",
+          "link": "https://readaheadapp.com/"
+        },
+        {
+          "name": "iTunes",
+          "link": "https://itunes.apple.com/us/app/read-ahead-practice-piano/id806292431?mt=8"
+        },
+        {
+          "name": "Steroids Microphone",
+          "link": "https://github.com/joedaniels29/cordova-plugin-mediocre-media"
+        }
+      ],
       "description": "",
       "technologies": [
         "appgyver",

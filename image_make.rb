@@ -28,7 +28,7 @@ end
 
 
 def render(img:, type:, width:, height:, dpi: 1, fit:)
-  out = File.join(IMAGE_ASSET_OUTPUT_LOCATION, type)
+  out = File.join(IMAGE_ASSET_OUTPUT_LOCATION, ntype)
   FileUtils::mkdir_p  out
   img['src'] ||= img['id']
   img['src'] =

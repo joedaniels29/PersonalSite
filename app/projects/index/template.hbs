@@ -9,7 +9,7 @@
                )
                }}
 
-               class={{join " " (flatten (array "grid-item" m.customClasses))}}>
+               class={{join " " (flatten (array "grid-item" m.customClasses m.id))}}>
 
                 {{#if m.icon}}
                     <img src="assets/images/icon/{{m.icon.src}}" alt={{or m.icon.alt m.name}}/>

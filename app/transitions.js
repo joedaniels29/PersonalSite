@@ -3,8 +3,8 @@
  */
 export default function(){
     this.transition(
-        this.fromRoute('index'),
-        this.toRoute('projects'),
+        this.toRoute('index'),
+        this.fromRoute('projects'),
         this.use('toLeft'),
         this.reverse('toRight')
     );

@@ -1,8 +1,8 @@
 @import "bourbon";
 @import "neat";
 @import "base/base";
-
 @import "header";
+
 article.contract > header > aside.timeline {
 
 }
@@ -17,7 +17,7 @@ article.contract > header > aside.timeline {
   overflow: visible;
 }
 
-code{
+code {
   white-space: pre;
 }
 
@@ -28,14 +28,26 @@ main {
 //todo: break out into another fiel
 main.resume {
   > section {
+    padding: $base-spacing/3;
+    margin: $base-spacing/3;
+    background-color: #f4f4f4;
+    border: 2px solid #eeeeee;
+    //border-radius: 4px;
     > h1 {
       font-weight: 500;
       font-size: 2* $base-font-size;
       border-bottom: solid 1px $red;
     }
+
+    a {
+      padding-right: $base-spacing/2;
+    }
     > article { //hopkins, contract
+      article {
+        margin-left: $base-spacing;
+      }
       > header {
-        margin: $base-spacing 0;
+        margin: 0;
       }
 
       header {
@@ -74,9 +86,6 @@ main.resume {
       }
 
     }
-    article {
-      margin-left: $base-spacing;
-    }
 
     &#projects {
       article.project {
@@ -89,9 +98,39 @@ main.resume {
         }
       }
     }
+    &#download {
+      article {
+          text-align: center;
 
-    &.education {
+        > div.download {
+          display: inline-block;
+          padding: $base-spacing/2;
+          h3{
+            margin:0;
+          }
+          margin: $base-spacing/3;
+          width: 400px;
+          background-color: #f0f0f0;
+          border: 1px solid #dddddd;
+
+
+
+        }
+      }
+    }
+    &#education {
       > article.umbc {
+        .classes {
+          text-align: center;
+          li {
+
+            display: inline-block;
+          }
+          li:not(:first-child):before {
+            content: "\2004 • \2004"
+          }
+
+        }
 
       }
       > article.online {

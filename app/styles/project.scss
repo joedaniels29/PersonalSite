@@ -5,59 +5,74 @@ main.projects {
       font-weight: 200;
     }
     header {
-       > div.project-title {
-        @include outer-container();
-        > img.logo {
-          width: 40px;
-          height: 40px
+      @include outer-container();
+      @include row(table);
+      section {
+        @include span-columns(10);
+        vertical-align: bottom;
+        > div.project-title {
+          @include outer-container();
+          > img.logo {
+            width: 40px;
+            height: 40px
 
+          }
+          > h1.title {
+            display: inline;
+          }
         }
-        > h1.title {
-      display:inline;
+      }
+      nav {
+        vertical-align: bottom;
+        h6{
+          margin-bottom: 0;
+          font-weight: 400;
         }
+        @include span-columns(2);
+        text-align: right;
       }
     }
 
-    > section{
+    > section {
       padding: $base-spacing 0;
-      > h3{
+      > h3 {
         font-weight: 400;
         font-size: $base-font-size * 1.5;
         border-bottom: black solid 1px;
       }
     }
-    section.news{
-      > ul{
-        > li{
-          > header{
-            > span.date{
+    section.news {
+      > ul {
+        > li {
+          > header {
+            > span.date {
 
             }
-            > span.host{
-              color:grey;
+            > span.host {
+              color: grey;
 
             }
           }
           padding: $base-spacing/3 0;
-          a,h6{
+          a, h6 {
             margin-bottom: 0;
             font-weight: 300;
           }
-          aside{
+          aside {
 
           }
         }
       }
     }
-    section.detailed-background{
-      p{
-      white-space: pre-line;
+    section.detailed-background {
+      p {
+        white-space: pre-line;
 
       }
     }
-    section.tweets{
-      ul{
-        li{
+    section.tweets {
+      ul {
+        li {
           width: 350px;
           display: inline-block;
         }

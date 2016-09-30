@@ -1,22 +1,32 @@
 <article>
     <header>
-        {{#if model.icon}}
+        <section>
             <div class="project-title">
-                {{application/hosted-img pch="icon" name=(or model.icon.src model.icon) alt=(or model.icon.alt model.name) class="logo"}}
+                {{#if model.icon}}
+                    {{application/hosted-img pch="icon" name=(or model.icon.src model.icon) alt=(or model.icon.alt model.name) class="logo"}}
+                {{/if}}
                 <h1 class='title' style="color: {{model.color.primary}};">{{or model.title model.name}}</h1>
             </div>
 
-        {{else}}
-            <h1 style="color: {{model.color.primary}};">{{or model.title model.name}}</h1>
-        {{/if}}
+            {{#if model.title}}
+                <h2 style="color: {{model.color.primary}};">{{model.name}}</h2>
+            {{/if}}
+            {{#if model.tagline}}
+                <h4>{{model.tagline}}</h4>
+            {{/if}}
+        </section>
+        <nav class="links">
 
-        {{#if model.title}}
-            <h2 style="color: {{model.color.primary}};">{{model.name}}</h2>
-        {{/if}}
-        {{#if model.tagline}}
-            <h4>{{model.tagline}}</h4>
-        {{/if}}
+            {{#if model.links}}
+                <h6>Links</h6>
+                <ul>
+                    {{#each model.links as |val|}}
+                        <li><a href="{{val.link}}">{{val.name}}</a></li>
+                    {{/each}}
+                </ul>
+            {{/if}}
 
+        </nav>
     </header>
     {{#if model.description}}
         <section class="description">
