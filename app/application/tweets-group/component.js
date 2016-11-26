@@ -18,23 +18,27 @@ export default Ember.Component.extend({
         this._super(...arguments);
 
 
-
     },
-    currentContent: Ember.computed("idx", "models", function(){
+    currentContent: Ember.computed("idx", "models", function () {
         return this.get("models").objectAt(this.get("idx")).split("");
     }),
     didRender(){
         this._super(...arguments);
         // window.twittr.widget.load();
-        window.twttr.events.bind(
-            'rendered',
-            ()=>{
-           Ember.$(".tweets ul").masonry({
-               // options
-               itemSelector: 'li',
-               columnWidth: 200
-           });
-       });
+        try {
+            window.twttr.events.bind(
+                'rendered',
+                ()=> {
+                    Ember.$(".tweets ul").masonry({
+                        // options
+                        itemSelector: 'li',
+                        columnWidth: 200
+                    });
+                });
+        } catch (e) {
+
+        }
+
     }
 
 

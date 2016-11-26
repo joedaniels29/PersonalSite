@@ -565,13 +565,15 @@ define('personal-site/application/tweets-group/component', ['exports', 'ember', 
         didRender: function didRender() {
             this._super.apply(this, arguments);
             // window.twittr.widget.load();
-            window.twttr.events.bind('rendered', function () {
-                _ember['default'].$(".tweets ul").masonry({
-                    // options
-                    itemSelector: 'li',
-                    columnWidth: 200
+            try {
+                window.twttr.events.bind('rendered', function () {
+                    _ember['default'].$(".tweets ul").masonry({
+                        // options
+                        itemSelector: 'li',
+                        columnWidth: 200
+                    });
                 });
-            });
+            } catch (e) {}
         }
 
     });
@@ -2903,7 +2905,7 @@ define("personal-site/payload", ["exports"], function (exports) {
         "url": "http://www.analytical.info/news/jhu",
         "comment": "REACH is built on the Analytical Informatics SDK. AI's platform (AI Bridge) provides a data warehouse that acts as a middle layer between client applications and the untenable HL7 messages that are so foundational to hospital IT systems."
       }],
-      "technologies": ["ActiveRecord", "rails", "fastlane", "jruby", "ReactiveCocoa", "PostgreSQL", "ember", "javascript", "emberData", "asterisk"],
+      "technologies": ["ActiveRecord", "rails", "fastlane", "jruby", "reactiveCocoa", "PostgreSQL", "ember", "javascript", "emberData", "asterisk"],
       "content": ["Designed/Built/Maintain iOS application in Swift and Objective-C.", "Embedded enterprise clinical medical image viewer into native iOS client application.", "Leveraged open source where possible: SIP video soft-phone library Liblinphone, JSON modeling framework Mantle, networking framework Alamofire, functional reactive programming", "Built web client with Ember.js leveraging WebRTC library SIP.js to connect iOS clients to Chrome, Firefox users.", "Configured a HIPAA compliant on-site Asterisk PBX server for WebRTC and h.264."]
     }, {
       "name": "OASIS",
@@ -3027,7 +3029,7 @@ define("personal-site/payload", ["exports"], function (exports) {
       "screenshots": [],
       "description": "",
       "platforms": ["web"],
-      "technologies": ["rails", "ruby", "ember"],
+      "technologies": ["rails", "ruby", "PostgreSQL", "jquery"],
       "news": [{
         "title": "Analytical to Launch Advanced Peer Review at SIIM 2016 in Portland.",
         "date": "06.23.16",

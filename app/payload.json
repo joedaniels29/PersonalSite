@@ -59,7 +59,7 @@
         "rails",
         "fastlane",
         "jruby",
-        "ReactiveCocoa",
+        "reactiveCocoa",
         "PostgreSQL",
         "ember",
         "javascript",
@@ -271,7 +271,8 @@
       "technologies": [
         "rails",
         "ruby",
-        "ember"
+        "PostgreSQL",
+        "jquery"
       ],
       "news": [
         {
